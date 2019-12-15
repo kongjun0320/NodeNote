@@ -13,7 +13,9 @@ app.use(bodyParser.json())
 const db = require('./db')
 // 引入路由
 const foodRouter = require('./router/foodRouter') 
+const fileRouter = require('./router/fileRouter') 
 app.use('/food', foodRouter)
+app.use('/file', fileRouter)
 
 
 
